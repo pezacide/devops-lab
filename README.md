@@ -2,7 +2,7 @@
 ![K8s Version](https://img.shields.io/badge/Kubernetes-GKE%20Autopilot-blue)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue?logo=docker)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Build Status](https://github.com/pezacide/devops-lab/actions/workflows/deploy.yaml/badge.svg)
+![Build Status](https://github.com/pezacide/devops-lab/actions/workflows/status.yaml/badge.svg)
 
 ## 🏁 Phase 0: Getting Started with Cloud Shell
 
