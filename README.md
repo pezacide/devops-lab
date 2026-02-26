@@ -1,7 +1,3 @@
-This is the complete content for a **README.md** file. You can create a new file in your project called `README.md`, paste this in, and GitHub (or any Markdown viewer) will render it into a professional, easy-to-follow technical manual.
-
----
-
 # 🚀 Zero-to-DevOps: The Complete Beginner's Guide
 
 Welcome to the Cloud! This guide will take you from a blank screen to a live, scalable web application running on **Google Kubernetes Engine (GKE)**.
