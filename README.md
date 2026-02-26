@@ -262,13 +262,51 @@ To avoid being charged, delete the cluster when finished:
 gcloud container clusters delete my-first-cluster --location=us-central1
 
 ```
-Step,Command
-Local Start,docker compose up -d
-Local Stop,docker compose down
-Auth Google,gcloud auth configure-docker us-central1-docker.pkg.dev
-Build & Tag,docker build -t my-app . && docker tag my-app [REMOTE_URL]
-Push,docker push [REMOTE_URL]
-Deploy K8s,kubectl apply -f .
-Check App,kubectl get pods
-Check URL,kubectl get svc web-service
-Cleanup,gcloud container clusters delete my-first-cluster --location=us-central1
+To set this up in GitHub properly, you aren't just uploading files; you are creating a "Repository." This is the home for your code where GitHub will automatically turn your `README.md` into the beautiful manual we just wrote.
+
+Here is the step-by-step for a complete beginner:
+
+### 1. Create the Repository on GitHub
+
+1. Log in to [GitHub](https://github.com).
+2. Click the **+** icon in the top right and select **New repository**.
+3. **Repository name:** `devops-lab`.
+4. **Public/Private:** Choose Public (if you want to share the link easily) or Private.
+5. **Check the box** that says **Add a README file**.
+6. Click **Create repository**.
+
+### 2. Add Your Files (The "No-Code" Way)
+
+If your colleague isn't ready for the `git` command line yet, they can use the browser:
+
+1. Inside your new repository, click **Add file** > **Create new file**.
+2. Name the file (e.g., `app.py`) and paste the code.
+3. Scroll down and click **Commit changes**.
+4. Repeat this for all 6 files (`Dockerfile`, `compose.yaml`, `deployment.yaml`, `service.yaml`, `redis.yaml`).
+
+### 3. Polish the Manual (The README)
+
+1. Click on the **README.md** file in your list.
+2. Click the **pencil icon** (Edit) in the top right.
+3. **Delete everything** currently in there and paste the **"Zero-to-DevOps Master Guide"** I gave you in the previous response.
+4. Click **Commit changes**.
+
+---
+
+
+## ⚡ Quick Start Command Cheat Sheet
+
+| Step | Command |
+| --- | --- |
+| **Local Start** | `docker compose up -d` |
+| **Local Stop** | `docker compose down` |
+| **Auth Google** | `gcloud auth configure-docker us-central1-docker.pkg.dev` |
+| **Build & Tag** | `docker build -t my-app . && docker tag my-app [REMOTE_URL]` |
+| **Push** | `docker push [REMOTE_URL]` |
+| **Deploy K8s** | `kubectl apply -f .` |
+| **Check App** | `kubectl get pods` |
+| **Check URL** | `kubectl get svc web-service` |
+| **Cleanup** | `gcloud container clusters delete my-first-cluster --location=us-central1` |
+
+---
+
