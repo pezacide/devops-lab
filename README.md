@@ -165,7 +165,16 @@ Wait for the **EXTERNAL-IP** to appear. Copy and paste it into your browser!
 gcloud container clusters delete my-first-cluster --location=us-central1
 
 ```
-
+Step,Command
+Local Start,docker compose up -d
+Local Stop,docker compose down
+Auth Google,gcloud auth configure-docker us-central1-docker.pkg.dev
+Build & Tag,docker build -t my-app . && docker tag my-app [REMOTE_URL]
+Push,docker push [REMOTE_URL]
+Deploy K8s,kubectl apply -f .
+Check App,kubectl get pods
+Check URL,kubectl get svc web-service
+Cleanup,gcloud container clusters delete my-first-cluster --location=us-central1
 ---
 
 **Would you like me to help you create a specific "Quick Start" cheat sheet that lists only the commands and no explanations?**
