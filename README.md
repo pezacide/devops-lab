@@ -1,3 +1,9 @@
+![Status](https://img.shields.io/badge/Status-Maintained-green)
+![K8s Version](https://img.shields.io/badge/Kubernetes-GKE%20Autopilot-blue)
+![Docker](https://img.shields.io/badge/Docker-Enabled-blue?logo=docker)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Build Status](https://github.com/[YOUR-USERNAME]/[YOUR-REPO-NAME]/actions/workflows/deploy.yaml/badge.svg)
+
 ## 🏁 Phase 0: Getting Started with Cloud Shell
 
 Before writing code, you need a workspace. Google Cloud Shell provides a free, pre-configured Linux machine in your browser.
