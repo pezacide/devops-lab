@@ -1,0 +1,12 @@
+name: Project Status
+
+on: [push] # Runs every time you push code
+
+jobs:
+  check-status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run a fake test
+        run: echo "Code is healthy!"
